@@ -11,6 +11,7 @@ def listen():
         print("listening sir..")
         audio = r.listen(scource)
     data = ""
+    # recording input audio
     try:
         data = r.recognize_google(audio)
         print("You said:" +data)
@@ -19,6 +20,7 @@ def listen():
     except sr.RequestError:
         print("RequestError")
     return data
+#text to speech command
 def respond(audioString):
     print(audioString)
     tts = gTTS(text = audioString, lang ='en')
@@ -37,7 +39,7 @@ def my_attendant(data):
         return listening
     return listening
 time.sleep(2)
-respond("Hi Akshat, i am an assistant.")
+respond("Hi Akshat, i am an assistant.") #listen and then respond.
 listen()
 listening = True
 while listening == True:
