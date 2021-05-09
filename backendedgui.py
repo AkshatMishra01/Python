@@ -49,7 +49,7 @@ dsub.add_cascade(label = 'Modules',menu = download)
 dsub.add_separator()
 dsub.add_command(label = 'requirements have not been secified yet')
 gui.config(menu = menubar)
-gui.title('Backended gui')
+gui.title('Backended gui using python')
 
 
 gui.mainloop()
