@@ -4,10 +4,14 @@ import cv2
 import datetime as dt
 
 def resize():
-    pass
+    
 
 def gray_scale():
-    pass
+    path = input("Enter the image path, in the path box:")
+    img = cv2.imread(path,cv2.COLOR_RGB2GRAY)
+    cv2.imshow("Image",img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
 def video_capture():
     cap = cv2.VideoCapture(0)
