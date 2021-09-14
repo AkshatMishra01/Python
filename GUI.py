@@ -27,11 +27,7 @@ def buttonRespond():
     arc.pack()
 b = tkinter.Button(text = "hello" ,activebackground = "red", font = "arial", command = buttonRespond)
 b.pack()
-gui.mainloop()
-
-
-
-
+gui2.mainloop()
 
 #new one
 import tkinter 
@@ -79,4 +75,4 @@ e.pack(side = 'left')
 c.pack()
 c2.pack()
 b.pack(side = 'left')
-
+gui2.mainloop()
